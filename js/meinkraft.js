@@ -125,11 +125,7 @@ MEINKRAFT.createBlock = function(material, x, y, z) {
 MEINKRAFT.helper = {}
 
 MEINKRAFT.gameState = ''
-MEINKRAFT.helper.gameStatesAvailable = [
-    'default',
-    'init',
-    // TODO
-]
+MEINKRAFT.helper.getGameStatesAvailable = () => Object.keys(MEINKRAFT.gameStatesAction)
 MEINKRAFT.gameStatesAction = {}
 MEINKRAFT.gameStatesAction.default = function () {
     console.error('State tidak diketahui')
@@ -278,6 +274,7 @@ MEINKRAFT.changeGameState = function(state) {
         MEINKRAFT.gameStatesAction.default()
     }
 
+    MEINKRAFT.gameState = state
     MEINKRAFT.gameStatesAction[state]()
 }
 
