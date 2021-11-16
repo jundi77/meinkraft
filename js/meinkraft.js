@@ -164,7 +164,6 @@ MEINKRAFT.gameStatesAction.init = function () {
         blocks[i].display();
     }
 
-    MEINKRAFT.camera.lookAt(blocks[0].x, blocks[0].y, blocks[0].z)
     var keys = [];
     var canJump = true;
     document.addEventListener("keydown", function(e){
