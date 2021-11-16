@@ -272,6 +272,7 @@ MEINKRAFT.gameStatesAction.init = function () {
 MEINKRAFT.changeGameState = function(state) {
     if (!MEINKRAFT.gameStatesAction[state]) {
         MEINKRAFT.gameStatesAction.default()
+        return
     }
 
     MEINKRAFT.gameState = state
