@@ -146,9 +146,9 @@ MEINKRAFT.gameStatesAction.init = function () {
     var inc = 0.05;
     var amplitude = 50;
     
-    for(var x = 0; x < 30; x++){
+    for(var x = 0; x < 10; x++){
         xoff = 0;
-        for(var z = 0; z < 30; z++){
+        for(var z = 0; z < 10; z++){
             var v = Math.round(noise.perlin2(xoff, zoff) * amplitude / 5) * 5;
             blocks.push(MEINKRAFT.createBlock('grass', x * 5, v, z * 5));
             xoff = xoff + inc;
