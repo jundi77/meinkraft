@@ -3,4 +3,20 @@
     margin: 0;
     padding: 0;
 }
-  
+
+.hidden {
+    display: none;
+}
+
+#crosshair {
+    /* Set 30x30 */
+    width: 30px;
+    height: auto;
+
+    /* Stay di tengah layar */
+    position:fixed;
+    left: 50%;
+    top:  50%;
+    margin-left: -15px;
+    margin-top:  -15px;
+}
