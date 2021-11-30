@@ -1,0 +1,6 @@
+/* canvas-scrollbar-fix: Remove browser's default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+  
