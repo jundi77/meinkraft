@@ -288,5 +288,20 @@ MEINKRAFT.size.width = MEINKRAFT.getWidth()
 MEINKRAFT.size.height = MEINKRAFT.getHeight()
 MEINKRAFT.texture = {}
 MEINKRAFT.texture.bg = MEINKRAFT.textureLoader.load(MEINKRAFT.getImg('sky.jpg'));
+MEINKRAFT.crosshair = {}
+MEINKRAFT.crosshair.el = document.getElementById("crosshair")
+MEINKRAFT.crosshair.hide = function() {
+    if (!this.el.classList.contains('hidden')) {
+        this.el.classList.add('hidden')
+    }
+}
+MEINKRAFT.crosshair.show = function() {
+    if (this.el.classList.contains('hidden')) {
+        this.el.classList.remove('hidden')
+    }
+}
+MEINKRAFT.crosshair.test = function() {
+    return this
+}
 
 MEINKRAFT.changeGameState('init')
