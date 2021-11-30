@@ -86,7 +86,7 @@ MEINKRAFT.getGameRenderer = function() {
 }
 
 MEINKRAFT.getPerspectiveCamera = function(width, height) {
-    return new THREE.PerspectiveCamera(75, width / height, 0.1, 1000)
+    return new THREE.PerspectiveCamera(75, width / height, 1, 1000)
 }
 
 MEINKRAFT.getMeshBasicMaterial = function(args) {
@@ -140,7 +140,8 @@ MEINKRAFT.gameStatesAction.init = function () {
     MEINKRAFT.camera = MEINKRAFT.getPerspectiveCamera(MEINKRAFT.size.width, MEINKRAFT.size.height)
     MEINKRAFT.camera.position.z = 5;
 
-    var blocks = [];
+    MEINKRAFT.blocks = [];
+    blocks = MEINKRAFT.blocks;
     var xoff = 0;
     var zoff = 0;
     var inc = 0.05;
@@ -260,6 +261,81 @@ MEINKRAFT.gameStatesAction.init = function () {
         MEINKRAFT.camera.updateProjectionMatrix();
     });
 
+    window.addEventListener("click", function(e){
+        // // delete cube
+        // MEINKRAFT.raycaster.setFromCamera(MEINKRAFT.crosshair.render, MEINKRAFT.camera)
+        // let selected = MEINKRAFT.raycaster.intersectObjects(MEINKRAFT.scene.children)
+        // if (selected.length > 0) {
+        //     MEINKRAFT.scene.remove(selected[0].object)
+        // };
+        MEINKRAFT.raycaster.setFromCamera(MEINKRAFT.crosshair.render, MEINKRAFT.camera)
+        let selected = MEINKRAFT.raycaster.intersectObjects(MEINKRAFT.scene.children)
+        if (selected.length > 0) {
+            /**
+             * Pengingat material index
+             * [
+             *   right side,
+             *   left side,
+             *   top side,
+             *   bottom side,
+             *   front side,
+             *   back side,
+             * ]
+             */
+            let x, y, z;
+            x = selected[0].object.position.x;
+            y = selected[0].object.position.y + 10;
+            z = selected[0].object.position.z;
+            switch (selected[0].face.materialIndex) {
+                case 0:
+                    console.log('right');
+                    // spawn x + 5
+                    x += 5
+                    break;
+                case 1:
+                    console.log('left');
+                    // spawn x - 5
+                    x -= 5
+                    break;
+                case 2:
+                    console.log('top');
+                    // spawn y + 5
+                    y += 5
+                    break;
+                case 3:
+                    console.log('bottom');
+                    // spawn y - 5
+                    y -= 5
+                    break;
+                case 4:
+                    console.log('front');
+                    // spawn z + 5
+                    z += 5
+                    break;
+                case 5:
+                    console.log('back');
+                    // spawn z - 5
+                    z -= 5
+                    break;
+                default:
+                    break;
+            }
+            var newBlock = MEINKRAFT.createBlock('grass', x, y, z);
+            MEINKRAFT.blocks.push(newBlock);
+            newBlock.display()
+            // MEINKRAFT.scene.remove(selected[0].object)
+        }
+    });
+
+    // TODO cara right click
+    // window.addEventListener("contextmenu", function(e){
+    //     MEINKRAFT.raycaster.setFromCamera(MEINKRAFT.crosshair.render, MEINKRAFT.camera)
+        // let selected = MEINKRAFT.raycaster.intersectObjects(MEINKRAFT.scene.children)
+        // if (selected.length > 0) {
+        //     MEINKRAFT.scene.remove(selected[0].object)
+        // }
+    // });
+
     function Loop(){
         MEINKRAFT.renderer.render(MEINKRAFT.scene, MEINKRAFT.camera);
         requestAnimationFrame(Loop);
@@ -303,5 +379,9 @@ MEINKRAFT.crosshair.show = function() {
 MEINKRAFT.crosshair.test = function() {
     return this
 }
+MEINKRAFT.crosshair.render = new THREE.Vector2()
+MEINKRAFT.crosshair.render.x = 0; // Center
+MEINKRAFT.crosshair.render.y = 0; // Center
+MEINKRAFT.raycaster = new THREE.Raycaster()
 
 MEINKRAFT.changeGameState('init')
