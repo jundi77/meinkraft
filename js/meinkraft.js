@@ -241,6 +241,43 @@ MEINKRAFT.gameStatesAction.init = function () {
 
     var controls = new THREE.PointerLockControls(MEINKRAFT.camera, MEINKRAFT.renderArea);
     window.controls = controls
+    let material = 'grass'
+    MEINKRAFT.menu.hud.topItem.changeSelected(0)
+    window.onkeyup = function(event) {
+        let key = event.key.toUpperCase();
+        if ( key == '1' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(0)
+            material = 'grass';
+        }
+        if ( key == '2' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(1)
+            material = 'pumpkin';
+        }
+        if ( key == '3' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(2)
+            material = 'tnt';
+        }
+        if ( key == '4' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(3)
+            material = 'planks';
+        }
+        if ( key == '5' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(4)
+            material = 'stone';
+        }
+        if ( key == '6' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(5)
+            material = 'gold';
+        }
+        if ( key == '7' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(6)
+            material = 'wool';
+        }
+        if ( key == '8' ) {
+            MEINKRAFT.menu.hud.topItem.changeSelected(7)
+            material = 'sand';
+        }
+    }
     MEINKRAFT.renderArea.addEventListener("mousedown", function(e){
         console.log(e.button);
         if (!MEINKRAFT.crosshair.locked) {
@@ -306,33 +343,6 @@ MEINKRAFT.gameStatesAction.init = function () {
                     break;
                 default:
                     break;
-            }
-            window.onkeyup = function(event) {
-                let key = event.key.toUpperCase();
-                if ( key == '1' ) {
-                    material = 'grass';
-                }
-                if ( key == '2' ) {
-                    material = 'pumpkin';
-                }
-                if ( key == '3' ) {
-                    material = 'tnt';
-                }
-                if ( key == '4' ) {
-                    material = 'planks';
-                }
-                if ( key == '5' ) {
-                    material = 'stone';
-                }
-                if ( key == '6' ) {
-                    material = 'gold';
-                }
-                if ( key == '7' ) {
-                    material = 'wool';
-                }
-                if ( key == '8' ) {
-                    material = 'sand';
-                }
             }
             var newBlock = MEINKRAFT.createBlock(material, x, y, z);
             MEINKRAFT.blocks.push(newBlock);
@@ -469,6 +479,17 @@ MEINKRAFT.crosshair.render.x = 0; // Center
 MEINKRAFT.crosshair.render.y = 0; // Center
 MEINKRAFT.crosshair.locked = false;
 MEINKRAFT.raycaster = new THREE.Raycaster()
+
+MEINKRAFT.topItem = [
+    'grass',
+    'pumpkin',
+    'tnt',
+    'planks',
+    'stone',
+    'gold',
+    'wool',
+    'sand',
+]
 
 MEINKRAFT.menu = {
     'main': {
