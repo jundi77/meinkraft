@@ -132,6 +132,7 @@ MEINKRAFT.gameStatesAction.default = function () {
     alert('State tidak diketahui')
 }
 MEINKRAFT.gameStatesAction.init = function () {
+    MEINKRAFT.crosshair.show();
     MEINKRAFT.scene.background = MEINKRAFT.texture.bg;
 
     MEINKRAFT.renderer.setSize(MEINKRAFT.size.width, MEINKRAFT.size.height);
@@ -358,17 +359,23 @@ MEINKRAFT.size.width = MEINKRAFT.getWidth()
 MEINKRAFT.size.height = MEINKRAFT.getHeight()
 MEINKRAFT.texture = {}
 MEINKRAFT.texture.bg = MEINKRAFT.textureLoader.load(MEINKRAFT.getImg('sky.jpg'));
+MEINKRAFT.hideElCss = function(el) {
+    if (!el.classList.contains('hidden')) {
+        el.classList.add('hidden')
+    }
+}
+MEINKRAFT.showElCss = function(el) {
+    if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden')
+    }
+}
 MEINKRAFT.crosshair = {}
 MEINKRAFT.crosshair.el = document.getElementById("crosshair")
 MEINKRAFT.crosshair.hide = function() {
-    if (!this.el.classList.contains('hidden')) {
-        this.el.classList.add('hidden')
-    }
+    MEINKRAFT.hideElCss(this.el)
 }
 MEINKRAFT.crosshair.show = function() {
-    if (this.el.classList.contains('hidden')) {
-        this.el.classList.remove('hidden')
-    }
+    MEINKRAFT.showElCss(this.el)
 }
 MEINKRAFT.crosshair.test = function() {
     return this
@@ -379,4 +386,12 @@ MEINKRAFT.crosshair.render.y = 0; // Center
 MEINKRAFT.crosshair.locked = false;
 MEINKRAFT.raycaster = new THREE.Raycaster()
 
-MEINKRAFT.changeGameState('init')
+MEINKRAFT.menu = {
+    'mainMenu': {
+        el: document.getElementById('game-main-menu'),
+        startClick: function(e) {
+            MEINKRAFT.hideElCss(this.el)
+            MEINKRAFT.changeGameState('init')
+        }
+    }
+}
