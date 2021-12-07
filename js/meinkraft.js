@@ -183,7 +183,7 @@ MEINKRAFT.gameStatesAction.init = function () {
 
     var controls = new THREE.PointerLockControls(MEINKRAFT.camera, MEINKRAFT.renderArea);
     window.controls = controls
-    document.body.addEventListener("mousedown", function(e){
+    MEINKRAFT.renderArea.addEventListener("mousedown", function(e){
         console.log(e.button);
         if (!MEINKRAFT.crosshair.locked) {
             controls.lock();
