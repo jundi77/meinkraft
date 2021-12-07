@@ -188,6 +188,8 @@ MEINKRAFT.gameStatesAction.default = function () {
     alert('State tidak diketahui')
 }
 MEINKRAFT.gameStatesAction.init = function () {
+    MEINKRAFT.crosshair.show();
+    MEINKRAFT.menu.hud.topItem.show()
     MEINKRAFT.scene.background = MEINKRAFT.texture.bg;
 
     MEINKRAFT.renderer.setSize(MEINKRAFT.size.width, MEINKRAFT.size.height);
@@ -239,7 +241,7 @@ MEINKRAFT.gameStatesAction.init = function () {
 
     var controls = new THREE.PointerLockControls(MEINKRAFT.camera, MEINKRAFT.renderArea);
     window.controls = controls
-    document.body.addEventListener("mousedown", function(e){
+    MEINKRAFT.renderArea.addEventListener("mousedown", function(e){
         console.log(e.button);
         if (!MEINKRAFT.crosshair.locked) {
             controls.lock();
@@ -441,17 +443,23 @@ MEINKRAFT.size.width = MEINKRAFT.getWidth()
 MEINKRAFT.size.height = MEINKRAFT.getHeight()
 MEINKRAFT.texture = {}
 MEINKRAFT.texture.bg = MEINKRAFT.textureLoader.load(MEINKRAFT.getImg('sky.jpg'));
+MEINKRAFT.hideElCss = function(el) {
+    if (!el.classList.contains('hidden')) {
+        el.classList.add('hidden')
+    }
+}
+MEINKRAFT.showElCss = function(el) {
+    if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden')
+    }
+}
 MEINKRAFT.crosshair = {}
 MEINKRAFT.crosshair.el = document.getElementById("crosshair")
 MEINKRAFT.crosshair.hide = function() {
-    if (!this.el.classList.contains('hidden')) {
-        this.el.classList.add('hidden')
-    }
+    MEINKRAFT.hideElCss(this.el)
 }
 MEINKRAFT.crosshair.show = function() {
-    if (this.el.classList.contains('hidden')) {
-        this.el.classList.remove('hidden')
-    }
+    MEINKRAFT.showElCss(this.el)
 }
 MEINKRAFT.crosshair.test = function() {
     return this
@@ -462,4 +470,52 @@ MEINKRAFT.crosshair.render.y = 0; // Center
 MEINKRAFT.crosshair.locked = false;
 MEINKRAFT.raycaster = new THREE.Raycaster()
 
-MEINKRAFT.changeGameState('init')
+MEINKRAFT.menu = {
+    'main': {
+        el: document.getElementById('game-main-menu'),
+        startClick: function(e) {
+            MEINKRAFT.hideElCss(this.el)
+            MEINKRAFT.changeGameState('init')
+        }
+    },
+    'chooseTopItemOnHud': {
+        el: document.querySelector('#game-choose-top-item'),
+        show: function () {
+            MEINKRAFT.showElCss(this.el)
+        },
+        hide: function () {
+            MEINKRAFT.hideElCss(this.el)
+        }
+    },
+    'hud': {
+        'topItem': {
+            el: document.querySelector('#hud-top-item-choose'),
+            changeSelected: function(num) {
+                if (num > 7) {
+                    console.error("Item index error: no index " + num)
+                    return
+                }
+                let item = this.el.querySelector('.selected');
+                if (item) item.classList.remove('selected')
+                if (!this.el.children[num].classList.contains('selected')) {
+                    this.el.children[num].classList.add('selected')
+                }
+            },
+            refreshImg: function(array) {
+                for (let i = 0; i < array.length; i++) {
+                    const element = array[i];
+                    let img_url;
+                    this.el.children[num].src = img_url;
+                }
+            },
+            show: function () {
+                MEINKRAFT.showElCss(this.el)
+            },
+            hide: function () {
+                MEINKRAFT.hideElCss(this.el)
+            }
+        }
+    }
+}
+
+// MEINKRAFT.changeGameState('init')

@@ -6,15 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meinkraft</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button-style.css">
     <script src="js/dist/three.min.js"></script>
     <script src="js/dist/perlin.js"></script>
     <script src="js/dist/PointerLockControls.js"></script>
 </head>
 <body>
     <!-- TODO Overlay HUD dst -->
+    <div class="center-flexbox" id="game-main-menu">
+        <img src="assets/images/logo.png" alt="Logo" id="game-logo">
+        <!-- <button class="offset" id="game-main-menu-continue">Continue</button> -->
+        <button class="fill menu-button" id="game-main-menu-start" onclick="MEINKRAFT.menu.main.startClick()">Start</button>
+        <button class="fill menu-button" id="game-main-menu-settings" onclick="alert('soon')">Settings</button>
+    </div>
+    <div id="hud-top-item-choose" class="hidden">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+        <!-- <button class="offset" id="game-main-menu-continue">Continue</button> -->
+    </div>
+
+    <div id="game-choose-top-item" class="hidden">
+        <code>Pilih 8 box</code>
+        <div id="hud-top-item-choosen">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <!-- <button class="offset" id="game-main-menu-continue">Continue</button> -->
+        </div>
+        <div id="block-gallery">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block"><img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <img src="assets/images/textures/gold_block.png" alt="gold_block" class="item" box="gold_block">
+            <!-- <button class="offset" id="game-main-menu-continue">Continue</button> -->
+        </div>
+        <!-- <button class="offset" id="game-main-menu-continue">Continue</button> -->
+    </div>
+
+    <!-- <div class="center-flexbox" id="game-settings">
+        <button class="fill" id="game-settings-bgm">BGM: </button>
+        <button class="fill" id="game-settings">Back</button>
+    </div> -->
 
     <div id="game-render-area">
-        <img src="assets/images/crosshair.png" alt="+" id="crosshair" class="">
+        <img src="assets/images/crosshair.png" alt="+" id="crosshair" class="hidden">
     </div>
     <script src="js/meinkraft.js"></script>
 </body>
