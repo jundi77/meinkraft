@@ -133,6 +133,7 @@ MEINKRAFT.gameStatesAction.default = function () {
 }
 MEINKRAFT.gameStatesAction.init = function () {
     MEINKRAFT.crosshair.show();
+    MEINKRAFT.menu.hud.topItem.show()
     MEINKRAFT.scene.background = MEINKRAFT.texture.bg;
 
     MEINKRAFT.renderer.setSize(MEINKRAFT.size.width, MEINKRAFT.size.height);
@@ -387,11 +388,51 @@ MEINKRAFT.crosshair.locked = false;
 MEINKRAFT.raycaster = new THREE.Raycaster()
 
 MEINKRAFT.menu = {
-    'mainMenu': {
+    'main': {
         el: document.getElementById('game-main-menu'),
         startClick: function(e) {
             MEINKRAFT.hideElCss(this.el)
             MEINKRAFT.changeGameState('init')
         }
+    },
+    'chooseTopItemOnHud': {
+        el: document.querySelector('#game-choose-top-item'),
+        show: function () {
+            MEINKRAFT.showElCss(this.el)
+        },
+        hide: function () {
+            MEINKRAFT.hideElCss(this.el)
+        }
+    },
+    'hud': {
+        'topItem': {
+            el: document.querySelector('#hud-top-item-choose'),
+            changeSelected: function(num) {
+                if (num > 7) {
+                    console.error("Item index error: no index " + num)
+                    return
+                }
+                let item = this.el.querySelector('.selected');
+                if (item) item.classList.remove('selected')
+                if (!this.el.children[num].classList.contains('selected')) {
+                    this.el.children[num].classList.add('selected')
+                }
+            },
+            refreshImg: function(array) {
+                for (let i = 0; i < array.length; i++) {
+                    const element = array[i];
+                    let img_url;
+                    this.el.children[num].src = img_url;
+                }
+            },
+            show: function () {
+                MEINKRAFT.showElCss(this.el)
+            },
+            hide: function () {
+                MEINKRAFT.hideElCss(this.el)
+            }
+        }
     }
 }
+
+// MEINKRAFT.changeGameState('init')
