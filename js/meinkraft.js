@@ -13,8 +13,12 @@ MEINKRAFT.getRenderArea = function() {
     return document.querySelector('#game-render-area')
 }
 
-MEINKRAFT.getAudio = function(name) {
-    return AUDIO_DIR + name
+MEINKRAFT.getAudio = function() {
+    var audio = document.createElement('audio');
+    var source = document.createElement('source');
+    source.src = 'assets/audios/place.mp3';
+    audio.appendChild(source);
+    audio.play();
 }
 
 MEINKRAFT.getModel = function(name) {
@@ -197,6 +201,20 @@ MEINKRAFT.gameStatesAction.init = function () {
 
     MEINKRAFT.camera = MEINKRAFT.getPerspectiveCamera(MEINKRAFT.size.width, MEINKRAFT.size.height)
     MEINKRAFT.camera.position.z = 5;
+    MEINKRAFT.camera.rotation.y = 10;
+
+    var stream = "https://cdn.pixabay.com/download/audio/2021/08/08/audio_88447e769f.mp3?filename=melody-of-nature-main-6672.mp3";
+    
+    var audioLoader = new THREE.AudioLoader();
+    var listener = new THREE.AudioListener();
+    var audio = new THREE.Audio(listener);
+    audioLoader.load(stream, function(buffer) {
+        audio.setBuffer(buffer);
+        audio.setLoop(true);
+        audio.setVolume(0.01);
+        audio.play();
+    });
+
 
     MEINKRAFT.blocks = [];
     blocks = MEINKRAFT.blocks;
@@ -205,9 +223,9 @@ MEINKRAFT.gameStatesAction.init = function () {
     var inc = 0.05;
     var amplitude = 50;
     
-    for(var x = 0; x < 10; x++){
+    for(var x = 0; x < 20; x++){
         xoff = 0;
-        for(var z = 0; z < 10; z++){
+        for(var z = 0; z < 20; z++){
             var v = Math.round(noise.perlin2(xoff, zoff) * amplitude / 5) * 5;
             blocks.push(MEINKRAFT.createBlock('grass', x * 5, v, z * 5));
             xoff = xoff + inc;
@@ -291,6 +309,7 @@ MEINKRAFT.gameStatesAction.init = function () {
             if (e.button == 2) {
                 // MEINKRAFT.raycaster.setFromCamera(MEINKRAFT.crosshair.render, MEINKRAFT.camera)
                 MEINKRAFT.scene.remove(selected[0].object)
+                MEINKRAFT.getAudio();
                 // TODO remove dari array MEINKRAFT.blocks
                 return
             }
@@ -345,6 +364,7 @@ MEINKRAFT.gameStatesAction.init = function () {
                     break;
             }
             var newBlock = MEINKRAFT.createBlock(material, x, y, z);
+            MEINKRAFT.getAudio();
             MEINKRAFT.blocks.push(newBlock);
             newBlock.display()
             // MEINKRAFT.scene.remove(selected[0].object)
