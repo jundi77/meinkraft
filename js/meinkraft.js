@@ -49,12 +49,12 @@ MEINKRAFT.getCubeMaterial = function(name) {
          */
         MEINKRAFT.helper.cubeMaterialMaps = {
             grass: () => [
-                    MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png')) }),
-                    MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
-                    MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_top_1.jpg'))}),
-                    MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
-                    MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
-                    MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png')) }),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_top_1.jpg'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('grass_side_1.png'))}),
             ],
             pumpkin: () => [
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_side.png')) }),
@@ -111,7 +111,103 @@ MEINKRAFT.getCubeMaterial = function(name) {
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('sand.png'))}),
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('sand.png'))}),
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('sand.png'))}),
-            ]
+            ],
+            crying_obsidian: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crying_obsidian.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crying_obsidian.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crying_obsidian.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crying_obsidian.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crying_obsidian.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crying_obsidian.png'))}),
+            ],
+            crafting_table: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crafting_table_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crafting_table_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crafting_table_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crafting_table_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crafting_table_front.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('crafting_table_side.png'))}),
+            ],
+            cactus: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('cactus_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('cactus_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('cactus_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('cactus_bottom.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('cactus_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('cactus_side.png'))}),
+            ],
+            deepslate_emerald_ore: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_emerald_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_emerald_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_emerald_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_emerald_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_emerald_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_emerald_ore.png'))}),
+            ],
+            deepslate_gold_ore: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_gold_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_gold_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_gold_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_gold_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_gold_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_gold_ore.png'))}),
+            ],
+            deepslate_iron_ore: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_iron_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_iron_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_iron_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_iron_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_iron_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_iron_ore.png'))}),
+            ],
+            deepslate_lapis_ore: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_lapis_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_lapis_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_lapis_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_lapis_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_lapis_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_lapis_ore.png'))}),
+            ],
+            deepslate_redstone_ore: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_redstone_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_redstone_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_redstone_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_redstone_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_redstone_ore.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('deepslate_redstone_ore.png'))}),
+            ],
+            diamond: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('diamond_block.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('diamond_block.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('diamond_block.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('diamond_block.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('diamond_block.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('diamond_block.png'))}),
+            ],
+            dirt: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt.png'))}),
+            ],
+            dirt_podzol: () => [
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt_podzol_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt_podzol_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt_podzol_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt_podzol_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt_podzol_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('dirt_podzol_side.png'))}),
+            ],
+            furnace: () => [ // Generally ini furnace off
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('furnace_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('furnace_side.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('furnace_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('furnace_top.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('furnace_front_off.png'))}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('furnace_side.png'))}),
+            ],
         }
     }
 
@@ -245,6 +341,7 @@ MEINKRAFT.gameStatesAction.init = function () {
     MEINKRAFT.menu.hud.topItem.changeSelected(0)
     window.onkeyup = function(event) {
         let key = event.key.toUpperCase();
+        console.log(key);
         if ( key == '1' ) {
             MEINKRAFT.menu.hud.topItem.changeSelected(0)
             material = 'grass';
@@ -276,6 +373,17 @@ MEINKRAFT.gameStatesAction.init = function () {
         if ( key == '8' ) {
             MEINKRAFT.menu.hud.topItem.changeSelected(7)
             material = 'sand';
+        }
+        if ( key == '`') {
+            if (MEINKRAFT.menu.chooseTopItemOnHud.choosing) {
+                controls.lock()
+                MEINKRAFT.menu.hud.topItem.show()
+                MEINKRAFT.menu.chooseTopItemOnHud.hide()
+                return
+            }
+            controls.unlock()
+            MEINKRAFT.menu.hud.topItem.hide()
+            MEINKRAFT.menu.chooseTopItemOnHud.show()
         }
     }
     MEINKRAFT.renderArea.addEventListener("mousedown", function(e){
@@ -501,11 +609,20 @@ MEINKRAFT.menu = {
     },
     'chooseTopItemOnHud': {
         el: document.querySelector('#game-choose-top-item'),
+        choosing: false,
         show: function () {
             MEINKRAFT.showElCss(this.el)
+            this.choosing = true
         },
         hide: function () {
             MEINKRAFT.hideElCss(this.el)
+            this.choosing = false
+        },
+        drag: function(ev) {
+
+        },
+        drop: function(ev) {
+            
         }
     },
     'hud': {
@@ -539,4 +656,4 @@ MEINKRAFT.menu = {
     }
 }
 
-// MEINKRAFT.changeGameState('init')
+MEINKRAFT.changeGameState('init')
