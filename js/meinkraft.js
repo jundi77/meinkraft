@@ -883,7 +883,7 @@ MEINKRAFT.gameStatesAction.init = function () {
     var inc = 0.05;
     var amplitude = 50;
     
-    for(var x = 0; x < 20; x++){
+    for(var x = 0; x < 30; x++){
         xoff = 0;
         for(var z = 0; z < 20; z++){
             var v = Math.round(noise.perlin2(xoff, zoff) * amplitude / 5) * 5;
