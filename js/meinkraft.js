@@ -541,8 +541,8 @@ MEINKRAFT.getCubeMaterial = function(name) {
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_side.png')), transparent: true}),
             ],
             pumpkin_off: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_sidee.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_sidee.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_side.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_side.png')), transparent: true}),
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_top.png')), transparent: true}),
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_top.png')), transparent: true}),
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('pumpkin_face_off.png')), transparent: true}),
@@ -557,132 +557,132 @@ MEINKRAFT.getCubeMaterial = function(name) {
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('sand.png')), transparent: true}),
             ],
             wool_black: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_black.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_black.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_black.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_black.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_black.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_black.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_black.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_black.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_black.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_black.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_black.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_black.png')), transparent: true}),
             ],
             wool_blue: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_blue.png')), transparent: true}),
             ],
             wool_brown: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_brown.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_brown.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_brown.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_brown.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_brown.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_brown.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_brown.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_brown.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_brown.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_brown.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_brown.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_brown.png')), transparent: true}),
             ],
             wool_cyan: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_cyan.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_cyan.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_cyan.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_cyan.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_cyan.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_cyan.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_cyan.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_cyan.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_cyan.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_cyan.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_cyan.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_cyan.png')), transparent: true}),
             ],
             wool_gray: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_gray.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_gray.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_gray.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_gray.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_gray.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_gray.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_gray.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_gray.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_gray.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_gray.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_gray.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_gray.png')), transparent: true}),
             ],
             wool_green: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_green.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_green.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_green.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_green.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_green.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_green.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_green.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_green.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_green.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_green.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_green.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_green.png')), transparent: true}),
             ],
             wool_light_blue: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_light_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_light_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_light_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_light_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_light_blue.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_light_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_light_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_light_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_light_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_light_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_light_blue.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_light_blue.png')), transparent: true}),
             ],
             wool_lime: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_lime.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_lime.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_lime.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_lime.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_lime.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_lime.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_lime.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_lime.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_lime.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_lime.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_lime.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_lime.png')), transparent: true}),
             ],
             wool_magenta: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_magenta.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_magenta.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_magenta.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_magenta.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_magenta.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_magenta.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_magenta.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_magenta.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_magenta.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_magenta.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_magenta.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_magenta.png')), transparent: true}),
             ],
             wool_orange: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_orange.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_orange.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_orange.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_orange.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_orange.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_orange.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_orange.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_orange.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_orange.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_orange.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_orange.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_orange.png')), transparent: true}),
             ],
             wool_pink: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_pink.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_pink.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_pink.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_pink.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_pink.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_pink.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_pink.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_pink.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_pink.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_pink.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_pink.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_pink.png')), transparent: true}),
             ],
             wool_purple: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_purple.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_purple.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_purple.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_purple.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_purple.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_purple.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_purple.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_purple.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_purple.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_purple.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_purple.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_purple.png')), transparent: true}),
             ],
             wool_red: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_red.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_red.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_red.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_red.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_red.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_red.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_red.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_red.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_red.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_red.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_red.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_red.png')), transparent: true}),
             ],
             wool_silver: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_silver.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_silver.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_silver.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_silver.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_silver.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_silver.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_silver.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_silver.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_silver.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_silver.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_silver.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_silver.png')), transparent: true}),
             ],
             wool_white: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_white.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_white.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_white.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_white.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_white.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_white.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_white.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_white.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_white.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_white.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_white.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_white.png')), transparent: true}),
             ],
             wool_yellow: [
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_yellow.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_yellow.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_yellow.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_yellow.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_yellow.png')), transparent: true}),
-                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_yellow.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_yellow.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_yellow.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_yellow.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_yellow.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_yellow.png')), transparent: true}),
+                MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('wool_colored_yellow.png')), transparent: true}),
             ],
             stonebrick_carved: [
                 MEINKRAFT.getMeshBasicMaterial({ map: MEINKRAFT.textureLoader.load(MEINKRAFT.getTextureImg('stonebrick_carved.png')), transparent: true}),
@@ -923,7 +923,6 @@ MEINKRAFT.gameStatesAction.init = function () {
     MEINKRAFT.menu.hud.topItem.changeSelected(0)
     window.onkeyup = function(event) {
         let key = event.key.toUpperCase();
-        console.log(key);
         if ( key == '1' ) {
             MEINKRAFT.menu.hud.topItem.changeSelected(key - 1)
         }
@@ -961,7 +960,6 @@ MEINKRAFT.gameStatesAction.init = function () {
         }
     }
     MEINKRAFT.renderArea.addEventListener("mousedown", function(e){
-        console.log(e.button);
         if (!MEINKRAFT.crosshair.locked) {
             controls.lock();
             return
@@ -975,6 +973,13 @@ MEINKRAFT.gameStatesAction.init = function () {
                 MEINKRAFT.scene.remove(selected[0].object)
                 MEINKRAFT.getAudio();
                 // TODO remove dari array MEINKRAFT.blocks
+                console.log(selected[0].object);
+                MEINKRAFT.blocks.find((value, idx, arr) => {
+                    if (value.block.uuid == selected[0].object.uuid) {
+                        console.log(value.block);
+                        arr.splice(idx, 1);
+                    }
+                })
                 return
             }
 
@@ -995,32 +1000,26 @@ MEINKRAFT.gameStatesAction.init = function () {
             z = selected[0].object.position.z;
             switch (selected[0].face.materialIndex) {
                 case 0:
-                    console.log('right');
                     // spawn x + 5
                     x += 5
                     break;
                 case 1:
-                    console.log('left');
                     // spawn x - 5
                     x -= 5
                     break;
                 case 2:
-                    console.log('top');
                     // spawn y + 5
                     y += 5
                     break;
                 case 3:
-                    console.log('bottom');
                     // spawn y - 5
                     y -= 5
                     break;
                 case 4:
-                    console.log('front');
                     // spawn z + 5
                     z += 5
                     break;
                 case 5:
-                    console.log('back');
                     // spawn z - 5
                     z -= 5
                     break;
@@ -1182,16 +1181,7 @@ MEINKRAFT.helper.sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-MEINKRAFT.topItem = [
-    'grass',
-    'pumpkin_on',
-    'tnt',
-    'planks',
-    'stone',
-    'gold',
-    'wool',
-    'sand',
-]
+MEINKRAFT.topItem = []
 
 MEINKRAFT.menu = {
     'main': {
@@ -1261,6 +1251,8 @@ MEINKRAFT.menu = {
                     this.el.children[i].title = MEINKRAFT.menu.chooseTopItemOnHud.el.children[1].children[i].title
                     this.el.children[i].box = MEINKRAFT.menu.chooseTopItemOnHud.el.children[1].children[i].box
                 }
+
+                window.localStorage.setItem("meinkraft.topItem", JSON.stringify(MEINKRAFT.topItem))
             },
             show: function () {
                 MEINKRAFT.showElCss(this.el)
@@ -1316,6 +1308,20 @@ MEINKRAFT.menu = {
                 })
             },
             init: function() {
+                let lastTopItem = window.localStorage.getItem("meinkraft.topItem")
+                
+                MEINKRAFT.topItem = lastTopItem? JSON.parse(lastTopItem) :  [
+                    'grass',
+                    'pumpkin_on',
+                    'tnt',
+                    'planks',
+                    'stone',
+                    'gold',
+                    'wool',
+                    'sand',
+                ];
+
+                console.log(lastTopItem);
                 let el = this.el, drop = this.drop;
                 MEINKRAFT.topItem.forEach(function (value, index, array) {
                     let img = document.createElement('img');
