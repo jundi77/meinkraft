@@ -115,6 +115,8 @@ body {
     width: 350px;
     height: 50px;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
 
     /* min-height: 100vh; */
     display: flex;
@@ -143,4 +145,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
- }
+}
+
+#block-gallery {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
